@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+     <meta charset="utf-8">
+     <title>Weather Application</title>
+     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+     <!-- The code above helps to insert icon with the help of bootstrap icon. -->
+</head>
+     <style>
+          /*The import below imports the google font.*/
+          @import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
+          /*The body below helps to insert backgorund image and keep it in proper way.*/
+          body {
+               font-family: 'Quicksand', sans-serif;
+               font-size: 5px;
+               margin: 0;
+               padding: 0;
+               margin-left: auto;
+               margin-right: auto;
+               background-image: url(2058978_bck.jpg);
+               background-repeat: no-repeat;
+               background-size: cover;
+          }
+          /*The code below is to insert the weather details form API in a box centre of the page.*/
+          .box {
+               height: 520px;
+               width: 35%;
+               font-weight: bold;
+               font-size: 17px;
+               border-style: solid;
+               border-width: 1px;
+               margin-left: auto;
+               margin-right: auto;
+               padding: 7px;
+               margin-top: 42px;
+               background-color: rgba(119, 136, 153, 0.9);
+               box-shadow: 0 0 6px 2px #403f3f96;
+               color: #000000;
+               border-radius: 20px;
+          }
+          input[type='text'] {
+               height: 30px;
+               width: 300px;
+               background: #e7e7e7;
+               border: none;
+               border-radius: 10px;
+          }
+          input[type='Submit'] {
+               height: 30px;
+               width: 77px;
+               background: #e7e7e7;
+               border: none;
+               border-radius: 10px;
+          }
+     </style>
+<body>
+     <section class="box">
+          <h3><b>Welcome to Wolverhampton Weather App</b></h3>
+          <hr>
+          <h4> <i>How are you doing today?</i></h4>
+
+          <input type="text" name="Search" id="Search">
+          <input type="Submit" name="Check Weather" id="Check_Weather">
+
+          <br><br>
+          <!-- The code below shows the location of the city and date and time. -->
+          <para><b><i class="bi bi-geo-alt-fill"></i>
+                    <label id="City" class="city">-</label>
+                    <label id="Country" class="country">-</label>
+                    &emsp;   
+                    <!-- The code above prints in same line. -->
+                    <i class="bi bi-clock-fill"></i>
+                    <label id="Time" class="time">--</label>
+
+               </b></para>
+          <!-- This is the name of the city whose weather will be displayed -->
+          <br><br>
+          <!-- This tells the temperature of Saint Albans -->
+          <div>Temperature
+               <i class="bi bi-thermometer"></i>:-
+               <span class="temp">0</span>
+          </div>
+          <br>
+          <!-- This tells the temperature after humidity in Saint Albans -->
+          <div>Feels Like
+               <i class="bi bi-thermometer-half"></i>:-
+               <span class="feel">0</span>
+          </div>
+          <br>
+          <!-- This tells the highest temperature of Saint Albans -->
+          <div>Maximum Temperature
+               <i class="bi bi-thermometer-high"></i>:-
+               <span class="max_temp">0</span>
+          </div>
+          <br>
+          <!-- This tells the lowest temperature of Saint Albans -->
+          <div>Minimum Temperature
+               <i class="bi bi-thermometer-low"></i>:-
+               <span class="min_temp">0</span>
+          </div>
+          <br>
+          <!-- This tells the Wind speed in Saint Albans -->
+          <div>Wind Speed
+               <i class="bi bi-wind"></i>:-
+               <span class="wind">0</span>
+          </div><br>
+          <!--This tells the description of the waether of Saint Albans -->
+          <div class="desc">Sky:-
+               <span class="sky">--</span>
+          </div>
+          <br>
+          <!-- This tells amount of watervapour present in air in Saint Albans -->
+          <div>Humidity
+               <i class="bi bi-moisture"></i>:-
+               <span class="humid">0</span>
+          </div>
+          <br>
+     </section>
+     <!-- The code Links the script file with HTML. -->
+     <script src="2058978_index.js">
+     </script>
+</body>
+</html>
